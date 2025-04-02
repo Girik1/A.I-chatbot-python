@@ -38,9 +38,6 @@ class Responses:
     def respondTo(self, token):
         return self.responses[token]
 
-    def joke(self):
-        return "not yet created"
-
     def getDefault(self):
         return self.responses["default"]
 

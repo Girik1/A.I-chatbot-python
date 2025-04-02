@@ -14,7 +14,7 @@ class Chatbot:
         if message == "remember what I said?": # Handle memory: Recall what the user last said
             return f"You mentioned: {self.memory}" if self.memory else "I don't remember anything yet. Tell me something!"
         elif message == "joke":
-            print(responses.joke())
+            print(responses.respondTo("joke"))
 
         # Save the last message in memory (unless the user says goodbye)
         if message != "bye":
